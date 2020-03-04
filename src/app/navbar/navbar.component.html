@@ -1,0 +1,68 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+    <!-- Text Logo - Use this if you don't have a graphic logo -->
+    <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Aria</a> -->
+
+    <!-- Image Logo -->
+    <a class="navbar-brand logo-image" href="index.html"><img src="/assets/images/logo-small.png" alt="alternative" ></a>
+    
+    <!-- Mobile Menu Toggle Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-awesome fas fa-bars"></span>
+        <span class="navbar-toggler-awesome fas fa-times"></span>
+    </button>
+    <!-- end of mobile menu toggle button -->
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault" >
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link page-scroll" routerLink="/Home" (click)="getActiveTab('home')"[class.active]="activetab === 'home'">HOME <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" routerLink="/Intro"(click)="getActiveTab('intro')"[class.active]="activetab === 'intro'">INTRO</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" routerLink="/Services"(click)="getActiveTab('services')"[class.active]="activetab === 'services'">OUR SERVICES</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" routerLink="/Tracker"(click)="getActiveTab('tracker')"[class.active]="activetab === 'tracker'">TRACKER</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" routerLink="/System"(click)="getActiveTab('system')"[class.active]="activetab === 'system'">SYSTEM</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link page-scroll" routerLink="/Projects"(click)="getActiveTab('projects')"[class.active]="activetab === 'projects'">PROJECTS</a>
+            </li>
+
+            <!-- Dropdown Menu -->          
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle page-scroll" routerLink="/About" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" routerLink="/Team"><span class="item-text">OUR TEAM</span></a>
+                    <div class="dropdown-items-divide-hr"></div>
+                    <a class="dropdown-item" routerLink="/Testimonials"(click)="getActiveTab('testimonials')"[class.active]="activetab === 'testimonials'"><span class="item-text">TESTIMONIALS</span></a>
+                </div>
+            </li>
+            <!-- end of dropdown menu -->
+
+            <li class="nav-item">
+                <a class="nav-link page-scroll" routerLink="/Contact"(click)="getActiveTab('contact')"[class.active]="activetab === 'contact'">CONTACT</a>
+            </li>
+        </ul>
+        <span class="nav-item social-icons">
+            <span class="fa-stack">
+                <a href="#your-link">
+                    <span class="hexagon"></span>
+                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                </a>
+            </span>
+            <span class="fa-stack">
+                <a href="#your-link">
+                    <span class="hexagon"></span>
+                    <i class="fab fa-twitter fa-stack-1x"></i>
+                </a>
+            </span>
+        </span>
+    </div>
+</nav> <!-- end of navbar -->
+<!-- end of navbar -->

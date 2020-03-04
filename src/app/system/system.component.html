@@ -1,0 +1,161 @@
+<!-- Details 1 -->
+<div id="details" class="accordion">
+    <div class="area-1">
+    </div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2">
+            
+            <!-- Accordion -->
+            <div class="accordion-container" id="accordionOne">
+                <h2>{{system.header}}</h2>
+                <div class="item">
+                    <div id="headingOne">
+                        <span data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" role="button">
+                            <span class="circle-numbering">{{system.num1}}</span><span class="accordion-title">{{system.pointone}}!</span>
+                        </span>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionOne">
+                        <div class="accordion-body">
+                            {{system.contentone}}
+                        </div>
+                    </div>
+                </div> <!-- end of item -->
+            
+                <div class="item">
+                    <div id="headingTwo">
+                        <span class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" role="button">
+                            <span class="circle-numbering">{{system.num2}}</span><span class="accordion-title">{{system.pointtwo}}</span>
+                        </span>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionOne">
+                        <div class="accordion-body">
+                            {{system.contenttwo}}
+                        </div>
+                    </div>
+                </div> <!-- end of item -->
+            
+                <div class="item">
+                    <div id="headingThree">
+                        <span class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" role="button">
+                            <span class="circle-numbering">{{system.num3}}</span><span class="accordion-title">{{system.pointthree}}</span>
+                        </span>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionOne">
+                        <div class="accordion-body">
+                            {{system.contentthree}}</div>
+                    </div>
+                </div> <!-- end of item -->
+            </div> <!-- end of accordion-container -->
+            <!-- end of accordion -->
+  
+    </div> <!-- end of area-2 -->
+    </div> <!-- end of accordion -->
+    <!-- end of details 1 -->
+  
+  
+    <!-- Details 2 -->
+  <div class="tabs">
+        <div class="area-1">
+            <div class="tabs-container">
+                
+                <!-- Tabs Links -->
+                <ul class="nav nav-tabs" id="ariaTabs" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-th"></i> {{system.city}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-th"></i> {{system.business}}</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-th"></i> {{system.home}}</a>
+                    </li>
+                </ul>
+                <!-- end of tabs links -->
+                
+                <!-- Tabs Content -->
+                <div class="tab-content" id="ariaTabsContent">
+  
+                    <!-- Tab -->
+                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                        <h4>{{system.cityservices}}</h4>
+                        <p>{{system.citydetails}}<a class="green page-scroll" href="#services">{{system.bridge}}</a>{{system.area}}</p>
+                        
+                        <!-- Progress Bars -->
+                        <div class="progress-container">
+                            <div class="title">{{system.graph1}}</div>
+                            <div class="progress">
+                                <div class="progress-bar first" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="title">{{system.graph2}}</div>
+                            <div class="progress">
+                                <div class="progress-bar second" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="title">{{system.graph3}}</div>
+                            <div class="progress">
+                                <div class="progress-bar third" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div> <!-- end of progress-container -->
+                        <!-- end of progress bars -->
+                        
+                    </div> <!-- end of tab-pane --> 
+                    <!-- end of tab -->
+  
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                        <ul class="list-unstyled li-space-lg first">
+                            <li class="media">
+                                <div class="media-bullet">{{system.pointnum1}}</div>
+                                <div class="media-body"><strong>{{system.point1}}</strong>{{system.point1content}}</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">{{system.pointnum2}}</div>
+                                <div class="media-body"><strong>{{system.point2}}</strong>{{system.point2content}}</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">{{system.pointnum3}}</div>
+                                <div class="media-body"><strong>{{system.point3}}</strong>{{system.point3content}}</div>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled li-space-lg last">
+                            <li class="media">
+                                <div class="media-bullet">{{system.pointnum4}}</div>
+                                <div class="media-body"><strong>{{system.point4}}</strong>{{system.point4content}}</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">{{system.pointnum5}}</div>
+                                <div class="media-body"><strong>{{system.point5}}</strong>{{system.point5content}}</div>
+                            </li>
+                            <li class="media">
+                                <div class="media-bullet">{{system.pointnum6}}</div>
+                                <div class="media-body"><strong>{{system.point6}}</strong>{{system.point6content}}</div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+  
+                    <!-- Tab -->
+                    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
+                        <p><strong>{{system.point1content1}}</strong>{{system.point1content2}}</p>
+                        <p><strong>{{system.point2content1}}</strong>{{system.point2content2}}</p>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">{{system.list1}}</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">{{system.list2}}</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">{{system.list3}}</div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of tab-pane -->
+                    <!-- end of tab -->
+  
+                </div> <!-- end of tab-content -->
+                <!-- end of tabs content -->
+  
+            </div> <!-- end of tabs-container -->
+        </div><!-- end of area-1 on same line and no space between comments to eliminate margin white space --><div class="area-2"></div> <!-- end of area-2 -->
+    </div> <!-- end of tabs -->
+    <!-- end of details 2 -->

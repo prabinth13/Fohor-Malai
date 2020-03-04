@@ -1,0 +1,23 @@
+.bg-panel {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background-color: #eee;
+}
+
+.login-panel {
+  display: block;
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  border: 1px grey solid;
+  padding: 0 20px;
+}
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
