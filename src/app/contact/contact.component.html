@@ -5,16 +5,16 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="text-container">
-                    <div class="section-title">CONTACT</div>
-                    <h2>Get In Touch Using The Form</h2>
-                    <p>You can stop by our office for a cup of coffee and just use the contact form below for any questions and inquiries</p>
+                    <div class="section-title">{{contact.header}}</div>
+                    <h2>{{contact.content}}</h2>
+                    <p>{{contact.subcontent}}</p>
                     <ul class="list-unstyled li-space-lg">
-                        <li class="address"><i class="fas fa-map-marker-alt"></i>44602, Hadigaun, Kathmandu, Nepal</li>
-                        <li><i class="fas fa-phone"></i><a href="tel:+977 9813946968">+977 9813946968</a></li>
-                        <li><i class="fas fa-phone"></i><a href="tel:+977 01 4009718">+977 01 4009718</a></li>
-                        <li><i class="fas fa-envelope"></i><a href="prabinth13@gmail.com">prabinth13@gmail.com</a></li>
+                        <li class="address"><i class="fas fa-map-marker-alt"></i>{{contact.location}}</li>
+                        <li><i class="fas fa-phone"></i><a href="tel:+977 9813946968">{{contact.mobile}}</a></li>
+                        <li><i class="fas fa-phone"></i><a href="tel:+977 01 4009718">{{contact.landline}}</a></li>
+                        <li><i class="fas fa-envelope"></i><a href="prabinth13@gmail.com">{{contact.email}}</a></li>
                     </ul>
-                    <h3>Follow Fohor Malai On Social Media</h3>
+                    <h3>{{contact.social}}</h3>
 
                     <span class="fa-stack">
                         <a href="#your-link">
@@ -54,25 +54,25 @@
                 <form id="contactForm" data-toggle="validator" data-focus="false">
                     <div class="form-group">
                         <input type="text" class="form-control-input" id="cname" required>
-                        <label class="label-control" for="cname">Name</label>
+                        <label class="label-control" for="cname">{{contact.name}}</label>
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group">
                         <input type="email" class="form-control-input" id="cemail" required>
-                        <label class="label-control" for="cemail">Email</label>
+                        <label class="label-control" for="cemail">{{contact.email2}}</label>
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group">
                         <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                        <label class="label-control" for="cmessage">Your message</label>
+                        <label class="label-control" for="cmessage">{{contact.message}}</label>
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group checkbox">
-                        <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>I agree with <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-conditions.html">Terms Conditions</a> 
+                        <input type="checkbox" id="cterms" value="Agreed-to-Terms" required>{{contact.agreement}}<a href="privacy-policy.html">{{contact.privacy}}</a> {{contact.and}} <a href="terms-conditions.html">{{contact.conditions}}</a> 
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group">
-                        <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
+                        <button type="submit" class="form-control-submit-button">{{contact.submit}}</button>
                     </div>
                     <div class="form-message">
                         <div id="cmsgSubmit" class="h3 text-center hidden"></div>

@@ -99,5 +99,55 @@ export const configuration = {
         list1: 'It is easy to get a trashcan placed at your location, just give us a call.',
         list2: 'We will also install the system to your local waste collecting authority.',
         list3: 'We have tested our hardware to their limits ensuring the best final product at your community.'
+    },
+    team: {
+        header: 'Our Team Of Consultants',
+        headercontent: 'We are only as strong and as knowledgeable as our team. So here are the men and women helping us achieve our goals.',
+        prabin: 'Prabin Thapaliya',
+        post1: 'General Manager',
+        pragya: 'Pragya Thapaliya',
+        post2: 'Chief Strategist',
+        suson: 'Suson Sapkota',
+        post3: 'System Consultant',
+        pratik: 'Pratik Karki',
+        post4: 'System Designer',
+        kshitiz: 'Kshitiz Mainali',
+        post5: 'Business Analyst',
+        riwaj: 'Riwaj Lama',
+        post6: 'Designer',
+        jasmine: 'Jasmine Praween',
+        post7: 'Flutter Developer'
+    },
+    about:{
+        header: 'ABOUT',
+        content: 'We are Passionate About Doing Our Part To Help Clean The City',
+        subcontent: 'Our goal is to provide the right tools which can can go on to restore Kathmandu to its glory. ',
+        point1: 'Everything we recommend has direct positive impact',
+        point2: 'You will become an important partner of our company',
+        happy: 'Happy',
+        users: 'Users',
+        issues: 'Issues',
+        solved: 'Solved',
+        good: 'Good',
+        reviews: 'Reviews'
+    },
+    contact: {
+        header: 'CONTACT',
+        content: 'Get In Touch Using The Form',
+        subcontent: 'You can stop by our office for a cup of coffee and just use the contact form below for any questions and inquiries',
+        location: '44602, Hadigaun, Kathmandu, Nepal',
+        mobile: '+977 9813946968',
+        landline: '+977 01 4009718',
+        email: 'prabinth13@gmail.com',
+        social: 'Follow Fohor Malai On Social Media',
+        name: 'Name',
+        email2: 'Email',
+        message: 'Your Message',
+        agreement: 'I agree with ',
+        policy: 'Privacy Policy',
+        and: 'and',
+        conditions: 'Terms Conditions',
+        submit: 'SUBMIT MESSAGE'
+
     }
 };

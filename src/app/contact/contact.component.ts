@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService } from '../config.service';
 
 @Component({
   selector: 'app-contact',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  contact = {}
 
-  constructor() { }
+  constructor(private config: ConfigService) { }
 
   ngOnInit() {
+    this.contact = this.getSystem();
   }
-
+  getSystem() {
+    return this.config.getConfig().contact;
+  }
 }

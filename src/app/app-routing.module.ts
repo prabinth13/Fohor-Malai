@@ -15,15 +15,13 @@ import { LoginComponent } from './login/login.component';
 
 
 
-
-
 const routes: Routes = [
 { path: '', redirectTo: 'Home', pathMatch: 'full' },
 { path: 'Home', component: HeaderComponent },
 { path: 'Intro', component: IntroComponent},
 { path: 'Services', component: ServicesComponent },
 { path: 'Tracker', component: LoginComponent},
-{path: 'tracker', component: TrackerComponent},
+{ path: 'tracker', component: TrackerComponent},
 { path: 'Projects', component: ProjectsComponent},
 { path: 'About', component: AboutComponent},
 { path: 'Contact', component: ContactComponent},
