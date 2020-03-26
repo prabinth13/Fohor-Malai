@@ -11,6 +11,7 @@ import { SystemComponent } from './system/system.component';
 import { TeamComponent } from './team/team.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { LoginComponent } from './login/login.component';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 
 
@@ -27,8 +28,9 @@ const routes: Routes = [
 { path: 'Contact', component: ContactComponent},
 { path: 'System', component: SystemComponent},
 { path: 'Team', component: TeamComponent},
-{ path: 'Testimonials', component: TestimonialsComponent}
-
+{ path: 'Testimonials', component: TestimonialsComponent},
+{ path: '404', component: NotfoundComponent },
+{ path: '**', redirectTo: '/404' },
 
 
 ];

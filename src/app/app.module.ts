@@ -22,6 +22,7 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { AlertModule } from 'ngx-bootstrap';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 
 
@@ -42,6 +43,7 @@ import { AlertModule } from 'ngx-bootstrap';
     LoginComponent,
     NavbarComponent,
     TrackerComponent,
+    NotfoundComponent,
   ],
   imports: [
     BrowserModule,
