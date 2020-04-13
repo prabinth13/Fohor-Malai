@@ -15,7 +15,6 @@ import { FooterComponent } from './footer/footer.component';
 import { CopyrightComponent } from './copyright/copyright.component';
 import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { LoginComponent } from './login/login.component';
 import { TrackerComponent } from './tracker/tracker.component';
 import { ConfigService } from './config.service';
 import { RouterModule } from '@angular/router';
@@ -23,6 +22,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { AlertModule } from 'ngx-bootstrap';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './in-memory-data.service';
+
 
 
 
@@ -40,18 +44,26 @@ import { NotfoundComponent } from './notfound/notfound.component';
     FooterComponent,
     CopyrightComponent,
     HeaderComponent,
-    LoginComponent,
     NavbarComponent,
     TrackerComponent,
     NotfoundComponent,
+    LoginComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
     AlertModule.forRoot(),
+    HttpClientModule,
+
+    //HttpClientInMemoeryWebApiModule module intercepts HTTP requests and returns simulated server responses.
+    // ******REMOVE IT WHEN A REAL SERVER IS READY TO RECEIVE REQUESTS******
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, { dataEncapsulation: false }
+    )
+
 
   ],
   providers: [ConfigService],

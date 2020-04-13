@@ -1,26 +1,30 @@
-<div class="bg-panel centered">
-  <div class="login-panel container-fluid">
-    <div>
-      <h1>Login</h1>
-    </div>
-    <div>
-      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-        <div class="form-group">
-          <label class="control-label" for="username">Username</label>
-          <input class="form-control" id="username" formControlName="username" type="text">
-        </div>
-        <div class="form-group">
-          <label class="control-label" for="password">Password</label>
-          <input class="form-control" id="password" formControlName="password" type="password">
-        </div>
-        <div class="form-group">
-          <input class="form-control btn-info" type="submit">
-        </div>
-        <alert *ngIf="error" type="danger">
-          {{error}}
-        </alert>
-      </form>
-    </div>
-  </div>
-</div>
+<section id="pricing" class="secondary-color text-center scrollto clearfix">
+    <div class="row clearfix">
 
+        <div class="container">
+
+            <div class="center-form panel">
+                <div class="panel-body">
+                <h4 class="text-center"><i class="fas fa-door-open"></i>Login</h4>
+
+                <form [formGroup]="loginForm" (ngSubmit)="login(loginForm.value)">
+                    <div class="form-group">
+                        <input type="text" class="form-control input-lg" name="email" placeholder="Email" formControlName="email">
+                        <span class="fas fa-at form-control-icon"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control input-lg" name="password" placeholder="Password" formControlName="password">
+                        <span class="fas fa-key form-control-icon"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-block btn-success">Login</button>
+                    
+                    <p class="text-center"></p>
+                        <small>Don't haave an account yet? <a routerLink="/signup">Signup</a></small>
+
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

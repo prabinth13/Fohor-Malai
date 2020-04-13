@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenticationService } from '../authentication.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,7 +10,7 @@ export class NavbarComponent implements OnInit {
 
   activetab = 'home';
 
-  constructor() { }
+  constructor(private auth: AuthenticationService) { }
 
   ngOnInit() {
   }
@@ -17,4 +18,9 @@ export class NavbarComponent implements OnInit {
   getActiveTab(tabname: string){
     this.activetab = tabname;
   }
+
+  logout(){
+    this.auth.logout();
+  }
+
 }

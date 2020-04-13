@@ -10,8 +10,10 @@ import { TrackerComponent } from './tracker/tracker.component';
 import { SystemComponent } from './system/system.component';
 import { TeamComponent } from './team/team.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
-import { LoginComponent } from './login/login.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { RouteguardService } from './routeguard.service'
 
 
 
@@ -19,10 +21,11 @@ import { NotfoundComponent } from './notfound/notfound.component';
 const routes: Routes = [
 { path: '', redirectTo: 'Home', pathMatch: 'full' },
 { path: 'Home', component: HeaderComponent },
+{ path: 'login', component: LoginComponent },
+{ path: 'signup', component: SignupComponent },
 { path: 'Intro', component: IntroComponent},
 { path: 'Services', component: ServicesComponent },
-{ path: 'Tracker', component: LoginComponent},
-{ path: 'tracker', component: TrackerComponent},
+{ path: 'Tracker', component: TrackerComponent, canActivate: [RouteguardService]},
 { path: 'Projects', component: ProjectsComponent},
 { path: 'About', component: AboutComponent},
 { path: 'Contact', component: ContactComponent},

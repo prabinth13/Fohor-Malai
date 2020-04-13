@@ -16,22 +16,22 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault" >
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link page-scroll" routerLink="/Home" (click)="getActiveTab('home')"[class.active]="activetab === 'home'">HOME <span class="sr-only">(current)</span></a>
+                <a class="nav-link page-scroll" routerLink="/Home" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">HOME <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link page-scroll" routerLink="/Intro"(click)="getActiveTab('intro')"[class.active]="activetab === 'intro'">INTRO</a>
+                <a class="nav-link page-scroll" routerLink="/Intro" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">INTRO</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link page-scroll" routerLink="/Services"(click)="getActiveTab('services')"[class.active]="activetab === 'services'">OUR SERVICES</a>
+                <a class="nav-link page-scroll" routerLink="/Services"routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">OUR SERVICES</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link page-scroll" routerLink="/Tracker"(click)="getActiveTab('tracker')"[class.active]="activetab === 'tracker'">TRACKER</a>
+                <a class="nav-link page-scroll" routerLink="/Tracker" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">TRACKER</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link page-scroll" routerLink="/System"(click)="getActiveTab('system')"[class.active]="activetab === 'system'">SYSTEM</a>
+                <a class="nav-link page-scroll" routerLink="/System" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">SYSTEM</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link page-scroll" routerLink="/Projects"(click)="getActiveTab('projects')"[class.active]="activetab === 'projects'">PROJECTS</a>
+                <a class="nav-link page-scroll" routerLink="/Projects" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">PROJECTS</a>
             </li>
 
             <!-- Dropdown Menu -->          
@@ -40,7 +40,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" routerLink="/Team"><span class="item-text">OUR TEAM</span></a>
                     <div class="dropdown-items-divide-hr"></div>
-                    <a class="dropdown-item" routerLink="/Testimonials"(click)="getActiveTab('testimonials')"[class.active]="activetab === 'testimonials'"><span class="item-text">TESTIMONIALS</span></a>
+                    <a class="dropdown-item" routerLink="/Testimonials"routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><span class="item-text">TESTIMONIALS</span></a>
                 </div>
             </li>
             <!-- end of dropdown menu -->
@@ -48,6 +48,11 @@
             <li class="nav-item">
                 <a class="nav-link page-scroll" routerLink="/Contact"(click)="getActiveTab('contact')"[class.active]="activetab === 'contact'">CONTACT</a>
             </li>
+
+            <li class="nav-item">
+                <a class="nav-link page-scroll" (click)="logout()">LOGOUT</a>
+            </li>
+
         </ul>
         <span class="nav-item social-icons">
             <span class="fa-stack">
